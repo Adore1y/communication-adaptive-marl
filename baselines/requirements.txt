@@ -1,0 +1,8 @@
+ray[rllib]
+pettingzoo[classic,mpe]
+supersuit
+torch
+numpy
+pandas
+matplotlib
+

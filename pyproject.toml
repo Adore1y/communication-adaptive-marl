@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marl"
+version = "0.0.0"
+description = "通信自适应的大规模多智能体强化学习框架骨架"
+authors = [{ name = "HPC Lab" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "gymnasium",
+    "gymnasium-minigrid",
+    "numpy",
+    "stable-baselines3",
+    "torch",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

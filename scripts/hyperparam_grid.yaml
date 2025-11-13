@@ -1,0 +1,19 @@
+# 方向二：超参搜索模板
+search_space:
+  comm_budget: [0.2, 0.4, 0.6]
+  trigger_threshold: [0.3, 0.5, 0.7]
+  region_groups: [4, 8]
+  lr_actor: [1e-4, 3e-4]
+  lr_critic: [1e-4, 3e-4]
+  clip_range: [0.1, 0.2]
+  trust_region_delta: [0.01, 0.05]
+  transformer_layers: [2, 4]
+  transformer_heads: [4, 8]
+  rollout_length: [256, 512]
+
+max_trials: 64
+sampler: random
+metric: success_rate
+mode: max
+
+
